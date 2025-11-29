@@ -1,0 +1,32 @@
+{
+  "name": "bluetooth-checker",
+  "version": "1.0.0",
+  "description": "Check Bluetooth status on Windows",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "cd react-app && npm run build",
+    "dist": "npm run build && electron-builder"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "type": "commonjs",
+  "build": {
+    "appId": "com.bluetooth.checker",
+    "productName": "Bluetooth Checker",
+    "files": [
+      "index.js",
+      "preload.js",
+      "react-app/dist/**/*"
+    ],
+    "win": {
+      "target": "portable",
+      "signAndEditExecutable": false
+    }
+  },
+  "devDependencies": {
+    "electron": "^39.2.4",
+    "electron-builder": "^26.0.12"
+  }
+}
