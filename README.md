@@ -10,7 +10,7 @@ Download the latest `.exe` from [Releases](https://github.com/vansh4117v/bluetoo
 
 ```bash
 npm install
-cd react-app && npm install
+cd react-app && npm install && npm run build
 cd ..
 npm start
 ```
